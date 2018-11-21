@@ -18,7 +18,7 @@ So, we can to find the source SCC in **Reverse** graph of the origin graph and i
 ![PostOrderFindSCCS](post-order-find-sccs.png)
 The Basic idea is:
 -   run DFS(Reversed Graph)
--   look at Node v in reversed graph with largest postvisit number
+-   look at Node v in reversed graph with largest [postvisit](previsit-and-postvisit-orders.md) number
 -   Explore node V in **ORIGIN** graph
 -   Every node that achievable from V is part of the sink SCC
 -   Remove the Sink SCC and repeat
