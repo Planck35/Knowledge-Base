@@ -1,7 +1,7 @@
-###Strongly Connected Components
-####Definition
+### Strongly Connected Components
+#### Definition
 Two vertices **v**,**w** in a directed graph are connected if you can reach **v** from **w** and can reach **w** from **v**.
-####As a result
+#### As a result
 A directed graph can be partitioned into **strongly connected components** where two vertices are connected if and only if they are in the same component.
 ![SCC](strong-connected-components.png )
 The SCCs in the graph compose a meta graph
