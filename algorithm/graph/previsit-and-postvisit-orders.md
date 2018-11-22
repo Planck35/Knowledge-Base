@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 **Normal** DFS just marks all vertices as visited.
 
 We also want to keep track of other data to be useful. So we add augment functions to store additional information.
@@ -33,7 +34,7 @@ def postvisit(node):
 Previsit and Postvisit numbers tell us about the execution information of DFS.
 And there is a **lemma** for this!
 
-For any vertices $u$, $v$ the intervals $[pre[u],post[u]]$ and $[pre[v],post[v]]$ are either nested or disjoint and it can not be Interleaved
+For any vertices \(u\), \(v\) the intervals \([pre[u],post[u]]\) and \([pre[v],post[v]]\) are either nested or disjoint and it can not be Interleaved
 Nested:
 ![nested relation](nested.png)
 Disjointed
