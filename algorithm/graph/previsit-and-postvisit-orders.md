@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 **Normal** DFS just marks all vertices as visited.
 
 We also want to keep track of other data to be useful. So we add augment functions to store additional information.
@@ -37,11 +36,18 @@ And there is a **lemma** for this!
 For any vertices \(u\), \(v\) the intervals \([pre[u],post[u]]\) and \([pre[v],post[v]]\) are either nested or disjoint and it can not be Interleaved
 Nested:
 ![nested relation](nested.png)
+
 Disjointed
 ![disjoint relation](disjoint.png)
+
 Interleaved(which is not possible)
 ![interleaved relation](interleaved.png)
+
 The thought of why interleaved is not possible is that:
-You either go from $u$ (suppose it's previous node) to $v$ (suppose it's latter node). In this way, it's must be nest relation of two node's previsit and postvisit interval.
+You either go from $u$ (suppose it's previous node) to $v$ (suppose it's latter node). 
+
+In this way, it's must be nest relation of two node's previsit and postvisit interval.
+
 If you go to $u$, $v$ independently, it have been the relation of disjointed.
+
 It doesn't exist a third **Visiting** relation 
