@@ -1,4 +1,4 @@
-# data-structure-and-algorithm
+# knowledge-base
 Personal learning notes
 
 algorithm
